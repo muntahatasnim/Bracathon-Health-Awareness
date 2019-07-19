@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context=".Medicines">
+<EditText
+    android:layout_width="match_parent"
+    android:hint="Search.."
+    android:id="@+id/Edt"
+    android:textSize="22dp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content" />
 <android.support.v7.widget.RecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/recyclerView"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:cacheColorHint="#FFFFFF"
     android:paddingTop="5dp"
     android:paddingBottom="5dp"
     android:scrollbars="vertical"
-    tools:context=".Medicines" />
+    android:id="@+id/recyclerView"
+    />
+</LinearLayout>
