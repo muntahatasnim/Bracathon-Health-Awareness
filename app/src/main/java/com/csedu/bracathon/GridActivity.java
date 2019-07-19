@@ -1,21 +1,31 @@
 package com.csedu.bracathon;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class GridActivity extends AppCompatActivity {
     GridView gridView;
+    private ImageView imageView ;
+    private Button skip, next;
+    private Dialog myDialog;
 
-    String[] fruitNames = {"Training","Exam","Notification","Guide","Settings","Profile"};
-    int[] fruitImages = {R.drawable.seminar,R.drawable.test,R.drawable.bell,R.drawable.books,R.drawable.settings,R.drawable.man};
+    String[] Options = {"Training","Exam","Notification","Guide","Settings","Profile"};
+    int[] OptionImage = {R.drawable.seminar,R.drawable.test,R.drawable.bell,R.drawable.books,R.drawable.settings,R.drawable.man};
+    int cnt = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,42 +39,31 @@ public class GridActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Toast.makeText(getApplicationContext(),fruitNames[i],Toast.LENGTH_LONG).show();
                 if(i == 0) {
                     Intent intent = new Intent(getApplicationContext(), TrainingActivity.class);
-                    /*intent.putExtra("name", fruitNames[i]);
-                    intent.putExtra("image", fruitImages[i]);*/
                     startActivity(intent);
                 }
-                else if (i == 1)
-                {
-
+                else if (i == 1) {
                     Intent intent = new Intent(getApplicationContext(), ExamActivity.class);
-                   /* intent.putExtra("name", fruitNames[i]);
-                    intent.putExtra("image", fruitImages[i]);*/
                     startActivity(intent);
                 }
-                else if (i == 2)
-                {
+                else if (i == 2) {
                     Intent intent = new Intent(getApplicationContext(), NotificationActivity.class);
                     startActivity(intent);
 
                 }
-                else if (i == 3)
-                {
+                else if (i == 3) {
                     Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
                     startActivity(intent);
 
                 }
-                else if (i == 4)
-                {
+                else if (i == 4) {
                     Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
                     startActivity(intent);
 
                 }
 
-                else
-                {
+                else {
                     Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
                     startActivity(intent);
                 }
@@ -77,7 +76,7 @@ public class GridActivity extends AppCompatActivity {
     private class CustomAdapter extends BaseAdapter {
         @Override
         public int getCount() {
-            return fruitImages.length;
+            return OptionImage.length;
         }
 
         @Override
@@ -97,12 +96,64 @@ public class GridActivity extends AppCompatActivity {
             TextView name = view1.findViewById(R.id.fruits);
             ImageView image = view1.findViewById(R.id.images);
 
-            name.setText(fruitNames[i]);
-            image.setImageResource(fruitImages[i]);
+            name.setText(Options[i]);
+            image.setImageResource(OptionImage[i]);
             return view1;
 
 
 
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the main_menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()) {
+            case R.id.item1:
+                 MyAlertDialog();
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+        return true;
+    }
+    public void MyAlertDialog(){
+        myDialog = new Dialog(GridActivity.this);
+        myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        myDialog.setContentView(R.layout.activity_demo_dialog);
+        myDialog.setTitle("App Demo");
+        imageView = findViewById(R.id.imageView);
+
+        skip = findViewById(R.id.skipp);
+        next = findViewById(R.id.nextt);
+
+
+        skip.setEnabled(true);
+        next.setEnabled(true);
+
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.cancel();
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cnt>5)myDialog.cancel();
+                imageView.setImageResource(OptionImage[cnt]);
+                cnt++;
+            }
+        });
+        myDialog.show();
     }
 }
