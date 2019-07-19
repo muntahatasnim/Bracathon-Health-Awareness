@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LanguageActivity"></activity>
+        <activity android:name=".DengueActivity"></activity>
+        <activity android:name=".LanguageActivity" />
         <activity android:name=".SettingsItemActivity" />
         <activity android:name=".Hudai" />
         <activity android:name=".Medicines" />

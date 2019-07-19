@@ -4,11 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationActivity">
+    tools:context=".NotificationActivity"
+    android:orientation="vertical">
 
-    <ImageButton
+    <Button
+        android:id="@+id/examNoti"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginLeft="5"
+        android:layout_marginTop="25"
+        android:layout_marginRight="5"
+        android:layout_marginBottom="10"
+        android:text="আপনার কোর্স ১ এর পরীক্ষা আগামী ২৭/০৭/২০১৯ তারিখের মধ্যে সম্পন্ন করুন"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dengue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5"
+        android:layout_marginRight="5"
+        android:layout_marginBottom="10"
+        android:text="প্রতিদিন একটি স্বাস্থ্য টিপসঃ কি করবেন ডেঙ্গু প্রতিরোধে?"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5"
+        android:layout_marginRight="5"
+        android:layout_marginBottom="10"
+        android:text=" আগামী  ১২ আগস্ট  পবিত্র ঈদুল আযহা"
+        android:textSize="23sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
