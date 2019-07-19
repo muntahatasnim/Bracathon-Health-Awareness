@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Button mybutton = (Button) findViewById(R.id.loginButton);
         mybutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainWindow.class));
+                startActivity(new Intent(MainActivity.this, GridActivity.class));
             }
         });
 
