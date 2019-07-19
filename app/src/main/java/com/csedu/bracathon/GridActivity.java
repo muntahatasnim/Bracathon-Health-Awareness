@@ -14,8 +14,8 @@ import android.widget.TextView;
 public class GridActivity extends AppCompatActivity {
     GridView gridView;
 
-    String[] fruitNames = {"Apple","Orange","strawberry","Melon","Kiwi","Banana"};
-    int[] fruitImages = {R.drawable.apple,R.drawable.oranges,R.drawable.strawberry,R.drawable.watermelon,R.drawable.kiwi,R.drawable.banana};
+    String[] fruitNames = {"Training","Exam","Notification","Guide","Settings","Profile"};
+    int[] fruitImages = {R.drawable.seminar,R.drawable.test,R.drawable.bell,R.drawable.books,R.drawable.settings,R.drawable.man};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
