@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Hudai"></activity>
+        <activity android:name=".Medicines"></activity>
         <activity android:name=".Language_change" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SettingsActivity" />

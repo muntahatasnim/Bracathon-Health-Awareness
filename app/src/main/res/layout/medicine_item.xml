@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:background="@color/colorAccent"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/imageMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="Icon"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/imageMedicine"
+        android:textColor="#ffff"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/imageMedicine" />
+</RelativeLayout>
