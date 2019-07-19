@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:contentDescription="App Demo"
         android:layout_margin="10dp"
-        app:srcCompat = "@drawable/doormat"
-        android:id="@+id/imageView"
-        />
+        android:contentDescription="App Demo"
+        app:srcCompat="@drawable/doormat" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="App Demo"
+        android:text="@string/resource"
         android:textSize="20sp"
         />
     <LinearLayout
@@ -28,16 +27,18 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
             android:text="Skip Demo"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:id="@+id/skipp"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
             android:text="Next"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:id="@+id/nextt"
             />
@@ -45,4 +46,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

@@ -19,9 +19,7 @@ import android.widget.Toast;
 
 public class GridActivity extends AppCompatActivity {
     GridView gridView;
-    private ImageView imageView ;
-    private Button skip, next;
-    private Dialog myDialog;
+    private ImageView imageView;
 
     String[] Options = {"Training","Exam","Notification","Guide","Settings","Profile"};
     int[] OptionImage = {R.drawable.seminar,R.drawable.test,R.drawable.bell,R.drawable.books,R.drawable.settings,R.drawable.man};
@@ -125,14 +123,16 @@ public class GridActivity extends AppCompatActivity {
         return true;
     }
     public void MyAlertDialog(){
-        myDialog = new Dialog(GridActivity.this);
+        final Dialog myDialog = new Dialog(this);
         myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         myDialog.setContentView(R.layout.activity_demo_dialog);
         myDialog.setTitle("App Demo");
         imageView = findViewById(R.id.imageView);
 
-        skip = findViewById(R.id.skipp);
-        next = findViewById(R.id.nextt);
+        Button skip = findViewById(R.id.skipp);
+        Button next = findViewById(R.id.nextt);
+
+        assert skip != null;
 
 
         skip.setEnabled(true);
