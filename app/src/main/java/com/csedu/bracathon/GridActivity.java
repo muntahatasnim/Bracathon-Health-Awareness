@@ -30,11 +30,44 @@ public class GridActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //                Toast.makeText(getApplicationContext(),fruitNames[i],Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getApplicationContext(),GridItemActivity.class);
-                intent.putExtra("name",fruitNames[i]);
-                intent.putExtra("image",fruitImages[i]);
-                startActivity(intent);
+                if(i == 0) {
+                    Intent intent = new Intent(getApplicationContext(), TrainingActivity.class);
+                    /*intent.putExtra("name", fruitNames[i]);
+                    intent.putExtra("image", fruitImages[i]);*/
+                    startActivity(intent);
+                }
+                else if (i == 1)
+                {
 
+                    Intent intent = new Intent(getApplicationContext(), ExamActivity.class);
+                   /* intent.putExtra("name", fruitNames[i]);
+                    intent.putExtra("image", fruitImages[i]);*/
+                    startActivity(intent);
+                }
+                else if (i == 2)
+                {
+                    Intent intent = new Intent(getApplicationContext(), NotificationActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (i == 3)
+                {
+                    Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
+                    startActivity(intent);
+
+                }
+                else if (i == 4)
+                {
+                    Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                    startActivity(intent);
+
+                }
+
+                else
+                {
+                    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
