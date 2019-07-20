@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bracathon</string>
+    <string name="app_name" translatable="false">Bracathon</string>
     <string name="welcome">welcome</string>
     <string name="login">login</string>
     <string name="change_language">change_language</string>

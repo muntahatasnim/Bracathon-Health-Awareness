@@ -42,7 +42,7 @@ public class GridActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else if (i == 1) {
-                    Intent intent = new Intent(getApplicationContext(), ExamActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), Quiz_main_activity.class);
                     startActivity(intent);
                 }
                 else if (i == 2) {
