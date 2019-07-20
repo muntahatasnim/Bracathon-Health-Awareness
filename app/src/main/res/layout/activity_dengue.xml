@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DengueActivity"
-    android:orientation="vertical">
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    tools:context=".DengueActivity">
 
     <TextView
+        android:id="@+id/dengueText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ডেঙ্গুর উপসর্গ ডেঙ্গু জ্বর হলে গাঁটে, মাংসপেশীতে ব্যথা হয়। মাথাব্যথা, ক্লান্তি অনুভব, গায়ে ফুসকুড়ি বেরনো ইত্যাদি উপসর্গ দেখা দেয়। রক্তে প্লেটলেট হুহু করে নামতে থাকে। সঠিক সময়ে ধরা না পড়লে ডেঙ্গুতে মৃত্যু হতে পারে।"
         android:textSize="20sp"
-        android:textStyle="normal"
-        />
+        android:textStyle="normal" />
 
 </LinearLayout>

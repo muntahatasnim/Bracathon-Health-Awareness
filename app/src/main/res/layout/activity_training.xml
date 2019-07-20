@@ -6,11 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".TrainingActivity"
     android:orientation="vertical">
+
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button e chap din"
+        android:layout_margin="5dp"
+
+        android:layout_marginLeft="10dp"
+        android:text="জন্মের সাথে সাথে নবজাতকের যত্ন" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="গর্ভকালীন খাবার ও সেবা"
+
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="স্বাস্থ্যকর খাবার"
 
         />
 
