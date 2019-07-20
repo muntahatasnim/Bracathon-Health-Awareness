@@ -10,15 +10,23 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-
-        android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="17dp"
         android:text="জন্মের সাথে সাথে নবজাতকের যত্ন" />
     <Button
         android:id="@+id/button1"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="গর্ভকালীন খাবার ও সেবা"
 
         />
@@ -26,7 +34,12 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="17dp"
         android:text="স্বাস্থ্যকর খাবার"
 
         />

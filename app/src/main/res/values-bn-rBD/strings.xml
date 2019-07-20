@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name"></string>
-    <string name="welcome">স্বাগত</string>
-    <string name="login"> প্রবেশ করুন</string>
-    <string name="change_language">ভাষা পরিবর্তন করুন</string>
-</resources>

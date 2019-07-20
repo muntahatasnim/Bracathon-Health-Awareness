@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/resource"
+        android:text="sadaasdsa"
         android:textSize="20sp"
         />
     <LinearLayout

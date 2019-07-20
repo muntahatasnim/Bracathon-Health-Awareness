@@ -9,31 +9,37 @@
 
     <Button
         android:id="@+id/examNoti"
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         android:text="আপনার কোর্স ১ এর পরীক্ষা আগামী ২৭/০৭/২০১৯ তারিখের মধ্যে সম্পন্ন করুন"
+        android:textColor="#fff"
         android:textSize="23sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/dengue"
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
         android:text="প্রতিদিন একটি স্বাস্থ্য টিপসঃ কি করবেন ডেঙ্গু প্রতিরোধে?"
+        android:textColor="#ffff"
         android:textSize="23sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/days"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"
+        android:layout_height="60dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"

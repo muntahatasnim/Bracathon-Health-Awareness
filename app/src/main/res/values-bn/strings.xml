@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Bracathon</string>
-    <string name="welcome">welcome</string>
-    <string name="login">login</string>
     <string name="logout">লগ আউট</string>
     <string name="language">ভাষা</string>
+    <string name="welcome">welcome</string>
+    <string name="login">login</string>
     <string name="change_language">change_language</string>
     <string name="resource">App Demo</string>
+
 </resources>

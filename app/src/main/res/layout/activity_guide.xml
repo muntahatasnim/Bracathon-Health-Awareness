@@ -11,9 +11,54 @@
     <Button
         android:id="@+id/medicineButton"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:text="ঔষধ"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="78dp" />
+    <Button
+        android:id="@+id/diseaseButton1"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:text="রোগের লক্ষণ"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="78dp" />
+    <Button
+        android:id="@+id/diseaseButton2"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:text="প্রতিকার"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/diseaseButton3"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:text="প্রতিরোধ"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="78dp" />
 </LinearLayout>

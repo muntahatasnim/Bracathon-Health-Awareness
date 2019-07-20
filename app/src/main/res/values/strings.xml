@@ -3,5 +3,7 @@
     <string name="welcome">welcome</string>
     <string name="login">login</string>
     <string name="change_language">change_language</string>
+    <string name="logout">লগ আউট</string>
+    <string name="language">ভাষা</string>
     <string name="resource">App Demo</string>
 </resources>

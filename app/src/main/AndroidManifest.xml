@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".QuizActivity"></activity>
         <activity android:name=".Quiz_main_activity" />
         <activity android:name=".DengueActivity" />
@@ -16,7 +16,6 @@
         <activity android:name=".SettingsItemActivity" />
         <activity android:name=".Hudai" />
         <activity android:name=".Medicines" />
-        <activity android:name=".Language_change" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".GuideActivity" />
